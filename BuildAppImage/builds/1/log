@@ -1,0 +1,168 @@
+Started by user [8mha:////4LfkxuONf3rjuPOgqVRucJ2cmdanJd2pz9GLvqXCJjDHAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/BuildAppImage
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/linuxacademy/content-lpic-ot-701-packer-docker
+ > git init /var/lib/jenkins/workspace/BuildAppImage # timeout=10
+Fetching upstream changes from https://github.com/linuxacademy/content-lpic-ot-701-packer-docker
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/linuxacademy/content-lpic-ot-701-packer-docker +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/linuxacademy/content-lpic-ot-701-packer-docker # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/linuxacademy/content-lpic-ot-701-packer-docker # timeout=10
+Fetching upstream changes from https://github.com/linuxacademy/content-lpic-ot-701-packer-docker
+ > git fetch --tags --progress https://github.com/linuxacademy/content-lpic-ot-701-packer-docker +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 91bbe4c650472c7899d143e24656a5939ed7f81c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 91bbe4c650472c7899d143e24656a5939ed7f81c # timeout=10
+Commit message: "Init commit"
+First time build. Skipping changelog.
+[BuildAppImage] $ /bin/sh -xe /tmp/jenkins5871724769309934825.sh
++ /bin/packer build -var repository=la/express -var tag=1 packer.json
+[1;32mdocker output will be in this color.[0m
+
+[1;32m==> docker: Creating a temporary directory for sharing data...[0m
+[1;32m==> docker: Pulling Docker image: node[0m
+[0;32m    docker: Using default tag: latest[0m
+[0;32m    docker: latest: Pulling from library/node[0m
+[0;32m    docker: 81fc19181915: Pulling fs layer[0m
+[0;32m    docker: ee49ee6a23d1: Pulling fs layer[0m
+[0;32m    docker: 828510924538: Pulling fs layer[0m
+[0;32m    docker: a8f58c4fcca0: Pulling fs layer[0m
+[0;32m    docker: 33699d7df21e: Pulling fs layer[0m
+[0;32m    docker: 923705ffa8f8: Pulling fs layer[0m
+[0;32m    docker: ae06f9217656: Pulling fs layer[0m
+[0;32m    docker: 39c7f0f9ab3c: Pulling fs layer[0m
+[0;32m    docker: df076510734b: Pulling fs layer[0m
+[0;32m    docker: a8f58c4fcca0: Waiting[0m
+[0;32m    docker: 33699d7df21e: Waiting[0m
+[0;32m    docker: 39c7f0f9ab3c: Waiting[0m
+[0;32m    docker: df076510734b: Waiting[0m
+[0;32m    docker: ae06f9217656: Waiting[0m
+[0;32m    docker: 923705ffa8f8: Waiting[0m
+[0;32m    docker: 828510924538: Verifying Checksum[0m
+[0;32m    docker: 828510924538: Download complete[0m
+[0;32m    docker: ee49ee6a23d1: Verifying Checksum[0m
+[0;32m    docker: ee49ee6a23d1: Download complete[0m
+[0;32m    docker: a8f58c4fcca0: Verifying Checksum[0m
+[0;32m    docker: a8f58c4fcca0: Download complete[0m
+[0;32m    docker: 81fc19181915: Verifying Checksum[0m
+[0;32m    docker: 81fc19181915: Download complete[0m
+[0;32m    docker: 923705ffa8f8: Verifying Checksum[0m
+[0;32m    docker: 923705ffa8f8: Download complete[0m
+[0;32m    docker: 39c7f0f9ab3c: Verifying Checksum[0m
+[0;32m    docker: 39c7f0f9ab3c: Download complete[0m
+[0;32m    docker: df076510734b: Verifying Checksum[0m
+[0;32m    docker: df076510734b: Download complete[0m
+[0;32m    docker: ae06f9217656: Verifying Checksum[0m
+[0;32m    docker: ae06f9217656: Download complete[0m
+[0;32m    docker: 33699d7df21e: Verifying Checksum[0m
+[0;32m    docker: 33699d7df21e: Download complete[0m
+[0;32m    docker: 81fc19181915: Pull complete[0m
+[0;32m    docker: ee49ee6a23d1: Pull complete[0m
+[0;32m    docker: 828510924538: Pull complete[0m
+[0;32m    docker: a8f58c4fcca0: Pull complete[0m
+[0;32m    docker: 33699d7df21e: Pull complete[0m
+[0;32m    docker: 923705ffa8f8: Pull complete[0m
+[0;32m    docker: ae06f9217656: Pull complete[0m
+[0;32m    docker: 39c7f0f9ab3c: Pull complete[0m
+[0;32m    docker: df076510734b: Pull complete[0m
+[0;32m    docker: Digest: sha256:719d5524c7e927c2c3e49338c7dde7fe56cb5fdb3566cdaba5b37cc05ddf15da[0m
+[0;32m    docker: Status: Downloaded newer image for node:latest[0m
+[0;32m    docker: docker.io/library/node:latest[0m
+[1;32m==> docker: Starting docker container...[0m
+[0;32m    docker: Run command: docker run -v /var/lib/jenkins/.packer.d/tmp/packer-docker903340700:/packer-files -d -i -t node /bin/bash[0m
+[0;32m    docker: Container ID: 6b8668bb340d0a20e130753502e7bb355014cdf630b01146bc3a4f9a3d79c7ff[0m
+[1;32m==> docker: Provisioning with shell script: /tmp/packer-shell129622538[0m
+[0;32m    docker: Ign:1 http://deb.debian.org/debian stretch InRelease[0m
+[0;32m    docker: Get:2 http://deb.debian.org/debian stretch-updates InRelease [93.6 kB][0m
+[0;32m    docker: Get:3 http://security.debian.org/debian-security stretch/updates InRelease [94.3 kB][0m
+[0;32m    docker: Get:4 http://deb.debian.org/debian stretch Release [118 kB][0m
+[0;32m    docker: Get:5 http://deb.debian.org/debian stretch Release.gpg [2410 B][0m
+[0;32m    docker: Get:6 http://deb.debian.org/debian stretch-updates/main amd64 Packages [28.2 kB][0m
+[0;32m    docker: Get:7 http://security.debian.org/debian-security stretch/updates/main amd64 Packages [529 kB][0m
+[0;32m    docker: Get:8 http://deb.debian.org/debian stretch/main amd64 Packages [7083 kB][0m
+[0;32m    docker: Fetched 7948 kB in 2s (3731 kB/s)[0m
+[0;32m    docker: Reading package lists...[0m
+[0;32m    docker: Reading package lists...[0m
+[0;32m    docker: Building dependency tree...[0m
+[0;32m    docker: Reading state information...[0m
+[0;32m    docker: curl is already the newest version (7.52.1-5+deb9u10).[0m
+[0;32m    docker: 0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.[0m
+[0;32m    docker:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current[0m
+[0;32m    docker:                                  Dload  Upload   Total   Spent    Left  Speed[0m
+[0;32m    docker: 100   145  100   145    0     0   1124      0 --:--:-- --:--:-- --:--:--  1124[0m
+[0;32m    docker: 100  3344  100  3344    0     0  13998      0 --:--:-- --:--:-- --:--:-- 13998[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/.DS_Store[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/app.js[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/bin/[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/bin/www[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/controllers/[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/controllers/helloworld.js[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/package.json[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/public/[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/public/stylesheets/[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/public/stylesheets/style.css[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/routes/[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/routes/helloworld.js[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/routes/index.js[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/routes/users.js[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/tests/[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/tests/routes/[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/tests/routes/test.helloworld.js[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/views/[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/views/error.jade[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/views/index.jade[0m
+[0;32m    docker: content-nodejs-hello-world-1.0/views/layout.jade[0m
+[0;32m    docker: npm WARN deprecated jade@1.11.0: Jade has been renamed to pug, please install the latest version of pug instead of jade[0m
+[0;32m    docker: npm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)[0m
+[0;32m    docker: npm WARN deprecated samsam@1.1.2: This package has been deprecated in favour of @sinonjs/samsam[0m
+[0;32m    docker: npm WARN deprecated formatio@1.1.1: This package is unmaintained. Use @sinonjs/formatio instead[0m
+[0;32m    docker: npm WARN deprecated joi@6.10.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).[0m
+[0;32m    docker: npm WARN deprecated constantinople@3.0.2: Please update to at least constantinople 3.1.1[0m
+[0;32m    docker: npm WARN deprecated transformers@2.1.0: Deprecated, use jstransformer[0m
+[0;32m    docker: npm WARN deprecated connect@1.9.2: connect 1.x series is deprecated[0m
+[0;32m    docker: npm WARN deprecated json3@3.3.2: Please use the native JSON object instead of JSON 3[0m
+[0;32m    docker: npm WARN deprecated samsam@1.1.3: This package has been deprecated in favour of @sinonjs/samsam[0m
+[0;32m    docker: npm WARN deprecated core-js@2.6.11: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.[0m
+[0;32m    docker: npm WARN deprecated hoek@2.16.3: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).[0m
+[0;32m    docker: npm WARN deprecated topo@1.1.0: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).[0m
+[0;32m    docker:[0m
+[0;32m    docker: > core-js@2.6.11 postinstall /var/code/node_modules/core-js[0m
+[0;32m    docker: > node -e "try{require('./postinstall')}catch(e){}"[0m
+[0;32m    docker:[0m
+[0;32m    docker: [96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m[0m
+[0;32m    docker:[0m
+[0;32m    docker: [96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m[0m
+[0;32m    docker: [96m>[94m https://opencollective.com/core-js [0m[0m
+[0;32m    docker: [96m>[94m https://www.patreon.com/zloirock [0m[0m
+[0;32m    docker:[0m
+[0;32m    docker: [96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m[0m
+[0;32m    docker:[0m
+[0;32m    docker:[0m
+[0;32m    docker: > cucumber-expressions@3.0.0 postinstall /var/code/node_modules/cucumber-expressions[0m
+[0;32m    docker: > node scripts/postinstall.js[0m
+[0;32m    docker:[0m
+[0;32m    docker: npm notice created a lockfile as package-lock.json. You should commit this file.[0m
+[0;32m    docker: added 268 packages from 746 contributors and audited 268 packages in 10.122s[0m
+[0;32m    docker:[0m
+[0;32m    docker: 16 packages are looking for funding[0m
+[0;32m    docker:   run `npm fund` for details[0m
+[0;32m    docker:[0m
+[0;32m    docker: found 14 vulnerabilities (10 low, 2 moderate, 2 critical)[0m
+[0;32m    docker:   run `npm audit fix` to fix them, or `npm audit` for details[0m
+[1;32m==> docker: Committing the container[0m
+[0;32m    docker: Image ID: sha256:4a69a50850c20d398b539a975846849a8efeb6ac95e51dd15b487c1ef71e3bb2[0m
+[1;32m==> docker: Killing the container: 6b8668bb340d0a20e130753502e7bb355014cdf630b01146bc3a4f9a3d79c7ff[0m
+[1;32m==> docker: Running post-processor: docker-tag[0m
+[0;32m    docker (docker-tag): Tagging image: sha256:4a69a50850c20d398b539a975846849a8efeb6ac95e51dd15b487c1ef71e3bb2[0m
+[0;32m    docker (docker-tag): Repository: la/express:1[0m
+[1;32mBuild 'docker' finished.[0m
+
+==> Builds finished. The artifacts of successful builds are:
+--> docker: Imported Docker image: sha256:4a69a50850c20d398b539a975846849a8efeb6ac95e51dd15b487c1ef71e3bb2
+--> docker: Imported Docker image: la/express:1
+Finished: SUCCESS
